@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600');
+
+body{
+  height: 100vh;
+  font-family: "Dosis", sans-serif;
+}
+
+header{
+  text-align: center;
+  padding: 10px;
+  font-weight: 200;
+}
+
+h1,h2{
+  font-weight: 200;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section, form{
+  background-color: #fafafa;
+  width: 500px;
+  height: 100%;
+}
+
+section{
+  /* padding: 10px 150px 10px 150px; */
+  border: 1px solid #0a66c2;
+  border-radius: 2px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+section h2{
+  margin-bottom: 10px;
+  font-size: 130%;
+}
+
+section a{
+  /* display: block; */
+  padding: 5px 30px;
+  background-color: #0a66c2;
+  color: #fafafa;
+  border-radius: 2px;
+}
+
+section i{
+  margin-right: 10px;
+}
+
+.form{
+  margin-top: 10px;
+  /* display: none; */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.reveal{
+  /* display: initial; */
+  opacity: 1;
+}
+
+.form p{
+  display: none;
+}
+
+form{
+  display: flex;
+  flex-direction: column;  
+  border: 1px solid #0a66c2;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+label{
+  margin-top: 10px;
+}
+
+
+input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #0a66c2;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+  background-color: #0a66c2;  
+  border-radius: 2px;
+  color: #fafafa;
+  padding: 5px;
+}
+
+.error{
+  background: rgba(255, 0, 0, 0.2);
+}
